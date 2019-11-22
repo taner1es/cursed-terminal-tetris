@@ -10,11 +10,11 @@ CXXFLAGS = $(LIBS) -I $(DIR_INCLUDE)
 all: clean tetris.debug tetris.build
 
 tetris.debug: $(DIR_SRC)/*.cpp
-	$(CXX) $(CXXFLAGS) -g $^ -o $(DIR_BUILD)/tetris.debug
+	$(CXX) -g $^ -o $(DIR_BUILD)/tetris.debug $(CXXFLAGS)
 	@echo "\n\t!! New File Created: $(DIR_BUILD)/$@\n"
 
 tetris.build: $(DIR_SRC)/*.cpp
-	$(CXX) $(CXXFLAGS) $^ -o $(DIR_BUILD)/tetris.build
+	$(CXX) $^ -o $(DIR_BUILD)/tetris.build $(CXXFLAGS)
 	@echo "\n\t!! New File Created: $(DIR_BUILD)/$@\n"
 
 clean:
