@@ -16,6 +16,7 @@ A Tetris clone playable on terminal very quickly.
 
 `make` : https://www.gnu.org/software/make/
 
+     git clone https://github.com/taner1es/cursed-terminal-tetris.git
      apt install g++
      apt install libncurses-dev
      apt install make
