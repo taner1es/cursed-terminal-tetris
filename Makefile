@@ -7,7 +7,7 @@ DIR_SRC = src
 
 CXXFLAGS = $(LIBS) -I $(DIR_INCLUDE)
 
-all: clean tetris.debug tetris.build
+all: clean createdir tetris.debug tetris.build
 
 tetris.debug: $(DIR_SRC)/*.cpp
 	$(CXX) -g $^ -o $(DIR_BUILD)/tetris.debug $(CXXFLAGS)
@@ -18,5 +18,10 @@ tetris.build: $(DIR_SRC)/*.cpp
 	@echo "\n\t!! New File Created: $(DIR_BUILD)/$@\n"
 
 clean:
-	rm -rf build/*
+	rm -rf build
 	@echo "\n\t!! A Folder Cleaned: $(DIR_BUILD)\n"
+
+createdir:
+
+	mkdir build
+	@echo "\n\t!! A Folder Created: $(DIR_BUILD)\n"
