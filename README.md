@@ -2,9 +2,11 @@
 
 A Tetris clone playable on terminal very quickly.
 
-`build size: 23.2KB`
-`debug size: 75.2KB`
-`repo size: 4.4MB`
+`build size: 28KB`
+`debug size: 80KB`
+`repo size: 1.5MB`
+
+![Playshot](playshot.gif)
 
 #### Building on debian based OS:
 
